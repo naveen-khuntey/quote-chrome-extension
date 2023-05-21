@@ -1,0 +1,12 @@
+{
+  "name": "Quote-per-day",
+  "description": "Generate random quote",
+  "version": "1.1",
+  "manifest_version": 3,
+  "permissions": ["bookmarks"],
+  "action": {
+    "default_title": "Quote : {'movie'}",
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  }
+}
