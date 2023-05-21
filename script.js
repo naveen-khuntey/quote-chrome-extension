@@ -6,7 +6,8 @@ const createJokes = () => {
     fetch(url)
     .then(res => res.json())
     .then((data) =>{
-        const x = Math.floor((Math.random() * 1642));
+        const k = data.length;
+        const x = Math.floor((Math.random() * k));
         newQoute.innerHTML = data[x].text;
         if(data[x].author) newAuthor.innerHTML = data[x].author;
         else newAuthor.innerHTML = 'Unknown';
